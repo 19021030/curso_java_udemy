@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Google es genial</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1 class="titulo-principal">
+                <span class="g-azul">G</span><span class="g-rojo">o</span><span class="g-amarillo">o</span><span class="g-azul">g</span><span class="g-verde">l</span><span class="g-rojo">e</span>
+                <span class="texto-gris">es genial</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#acerca_de">Acerca de</a></li>
+                    <li><a href="evento.html">Eventos</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Regístrate a Nuestro Próximo Evento</h2>
+                <p>
+                    <strong>&gt;&gt;</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil molestias,
+                    doloribus quia eveniet rerum, eligendi, possimus placeat sequi aspernatur
+                    provident non eius dolores culpa! Ipsam itaque eius magnam. Ipsum, odit.
+                </p>
+
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Registrate</legend>
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="15" max="99" required>
+
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Genero</legend>
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" id="hombre" name="genero" value="hombre" required>
+
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" id="mujer" name="genero" value="mujer">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Eventos</legend>
+                        <label for="evento">Selecciona el Evento:</label>
+                        <select id="evento" name="evento">
+                            <option value="conferencia">Conferencia Tecnológica</option>
+                            <option value="taller-web">Taller de Desarrollo Web</option>
+                            <option value="google-io">Google I/O Extended</option>
+                            <option value="ia-cloud">Seminario de IA y Cloud</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Ciudades de evento</legend>
+                        <label for="ciudad">Ciudad:</label>
+                        <input list="lista-ciudades" id="ciudad" name="ciudad" required>
+                        <datalist id="lista-ciudades">
+                            <option value="Ciudad de México">
+                            <option value="Lima">
+                            <option value="Bogotá">
+                            <option value="Buenos Aires">
+                            <option value="Madrid">
+                        </datalist>
+                    </fieldset>
+
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Más Información sobre los Eventos</h2>
+                <details open>
+                    <summary>Conferencia Tecnológica</summary>
+                    <p>
+                        <strong>&gt;&gt;</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quod pariatur
+                        velit aspernatur! Iste autem magni aliquid quibusdam atque eum praesentium,
+                        facilis accusamus sequi necessitatibus quaerat accusantium consequuntur!
+                        Commodi, libero.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Taller de Desarrollo Web</summary>
+                    <p>
+                        <strong>&gt;&gt;</strong> Aprende las últimas novedades en HTML5, CSS3 y JavaScript moderno junto a
+                        ingenieros y desarrolladores invitados.
+                    </p>
+                </details>
+            </section>
+        </main>
+
+        <footer>
+            <p>Derechos reservados &copy; 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
